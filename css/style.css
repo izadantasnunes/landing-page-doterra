@@ -1,0 +1,34 @@
+body { font-family: 'Montserrat', sans-serif; scroll-behavior: smooth; }
+        h1, h2, .serif { font-family: 'Playfair Display', serif; }
+        .bg-doterra { background-color: #5d3d8d; } /* Cor roxa característica dōTERRA */
+        .text-doterra { color: #5d3d8d; }
+        .gradient-overlay { background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); }
+        .floating { animation: floating 3s ease-in-out infinite; }
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .pet-gradient { background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%); }
+        .kids-gradient { background: linear-gradient(135deg, #fefce8 0%, #fef9c3 100%); }
+        /* Estilo para garantir que as imagens de produto com fundo branco fiquem limpas */
+        .product-img { mix-blend-mode: multiply; }
+
+        /* VÍDEO RESPONSIVO */
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* proporção 16:9 */
+    height: 0;
+    overflow: hidden;
+    border-radius: 1.5rem;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
